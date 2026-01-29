@@ -7,7 +7,7 @@ h1{
     text-align: center;
 }
 input{
-    width: 50%;
+    width: 60%;
 }
 
 .items-container{
@@ -20,9 +20,25 @@ input{
 .row-style{
     margin: 10px 7px;
 }
-
+.container-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .to-do-container{
+    border: 1px solid black;
+    width: 70%;
+    border-radius: 1.5rem;
+    padding: 0.5rem;
+}
+.to-do-container-tasks{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.error-message{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
 }

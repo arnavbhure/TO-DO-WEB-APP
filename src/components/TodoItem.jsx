@@ -1,6 +1,6 @@
 function ToDoItem ({items})
 {
-    return <div className="to-do-container">
+    return <div className="to-do-container-tasks">
     {items.map((item , index) =>(
        <div className="row row-style" key={index}>
           <div className="col-6">
