@@ -1,7 +1,7 @@
 
-function ErrorMessage({items})
+function ErrorMessage({toDoItems})
 {
-    if(!items || items.length===0)
+    if(!toDoItems || toDoItems.length===0)
     return (
      <p className="error-message">Relax !! To Do List is empty !</p>    
     );

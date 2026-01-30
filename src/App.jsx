@@ -3,20 +3,21 @@ import AddToDo from "./components/AddToDo";
 import ToDoItem from "./components/TodoItem";
 import "./App.css";
 import ErrorMessage from "./components/ErrorMessage";
-
-  let todoitems = [{text : "Buy Milk"  , date :"04/10/2026"  }, {text:"Go to College" , date : "05/10/2026"} , {text:"Buy Books" , date: "07/10/2026"}];
+import { useState } from "react";
 
 function App() {
-  return (
+const [toDoItems , setToDoItems] = useState([{text : "Buy Milk"  , date :"04/10/2026"  }, {text:"Go to College" , date : "05/10/2026"} , {text:"Buy Books" , date: "07/10/2026"}]);
+ 
+ return (
 <div className="container-flex">
     <div className="to-do-container">
         <AppName/>
-       
-        <AddToDo items={todoitems}></AddToDo>
 
-        <ErrorMessage items={todoitems}></ErrorMessage>
+        <AddToDo toDoItems={toDoItems}  setToDoItems={setToDoItems}></AddToDo>
 
-        <ToDoItem items={todoitems}/>
+        <ErrorMessage toDoItems={toDoItems}></ErrorMessage>
+
+        <ToDoItem toDoItems={toDoItems}/>
 
     </div>
 </div>

@@ -1,7 +1,7 @@
-function ToDoItem ({items})
+function ToDoItem ({toDoItems})
 {
     return <div className="to-do-container-tasks">
-    {items.map((item , index) =>(
+    {toDoItems.map((item , index) =>(
        <div className="row row-style" key={index}>
           <div className="col-6">
             <p>{item.text}</p>
