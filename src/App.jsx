@@ -17,7 +17,7 @@ let [toDoItems , setToDoItems] = useState([]);
 
         <ErrorMessage toDoItems={toDoItems}></ErrorMessage>
 
-        <ToDoItem toDoItems={toDoItems}/>
+        <ToDoItem toDoItems={toDoItems} setToDoItems={setToDoItems}/>
 
     </div>
 </div>

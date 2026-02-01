@@ -6,8 +6,20 @@ h1{
     margin-bottom: 5rem;
     text-align: center;
 }
+
 input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 0.6rem;
     width: 60%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+}
+
+.text-input{
+    width: 80%;
+    min-width: 150px;
 }
 
 .items-container{
@@ -17,13 +29,19 @@ input{
     min-width: 70px;
 }
 
+.display-output{    
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+}
+
 .row-style{
     margin: 10px 7px;
 }
 .container-flex{
     display: flex;
+    margin-top: 2rem;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 .to-do-container{

@@ -22,7 +22,7 @@ const handleOnClickAdd = () =>{
 
     return <div className="row row-style">
           <div className="col-6">
-            <input type="text" placeholder="Enter To Do here" value={toDoInput} onChange={(e) => handleOnToDoChange(e.target.value)}/>
+            <input className="text-input" type="text" placeholder="Enter To Do here" value={toDoInput} onChange={(e) => handleOnToDoChange(e.target.value)}/>
           </div>
           <div className="col-4">
             <input type="date" value={toDoDate} onChange={(e) => handleOnDateChange(e.target.value)}/>
