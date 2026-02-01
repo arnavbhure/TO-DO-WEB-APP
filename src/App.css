@@ -29,6 +29,7 @@ input{
 .to-do-container{
     border: 1px solid black;
     width: 70%;
+    min-width: 350px;
     border-radius: 1.5rem;
     padding: 0.5rem;
 }

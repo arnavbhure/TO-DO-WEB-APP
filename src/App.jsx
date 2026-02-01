@@ -6,7 +6,7 @@ import ErrorMessage from "./components/ErrorMessage";
 import { useState } from "react";
 
 function App() {
-const [toDoItems , setToDoItems] = useState([{text : "Buy Milk"  , date :"04/10/2026"  }, {text:"Go to College" , date : "05/10/2026"} , {text:"Buy Books" , date: "07/10/2026"}]);
+let [toDoItems , setToDoItems] = useState([]);
  
  return (
 <div className="container-flex">
